@@ -1,0 +1,39 @@
+<?php
+$ip, tcpport, udpport, user, password, channelname, channelpassword;
+if(!$_GET['address'])
+{
+die("the ip is the only required parameter, so this needs to be completed");
+}
+$ip=$_GET['address'];
+if(!$_GET['tcpport])
+{
+$tcpport=10333;
+}
+$tcpport=$_GET['tcpport'];
+if(!$_GET['udpport'])
+{
+$udpport=10333;
+}
+$udpport=$_GET['udpport'];
+if(!$_GET['username'])
+{
+$username="";
+}
+$username=$_GET['username'];
+if(!$_GET['password'])
+{
+$password="";
+}
+$password=$_GET['password'];
+if(!$_GET['cn'])
+{
+$channelname="";
+}
+$channelname=$_GET['cn'];
+if(!$_GET['cp'])
+{
+$channelpassword="";
+}
+$channelpassword=$_GET['cp'];
+header("location: tt://".$ip."?tcpport=".$tcpport."&udpport=".$udpport."&username=".$username."&password=".$password."&channel=".$channelname."&chanpasswd=".$channelpassword);
+?>
