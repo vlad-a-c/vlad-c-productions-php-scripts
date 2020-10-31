@@ -1,11 +1,11 @@
 <?php
-$ip, tcpport, udpport, user, password, channelname, channelpassword;
+$ip; $tcpport; $udpport; $user; $password; $channelname; $channelpassword;
 if(!$_GET['address'])
 {
 die("the ip is the only required parameter, so this needs to be completed");
 }
 $ip=$_GET['address'];
-if(!$_GET['tcpport])
+if(!$_GET['tcpport'])
 {
 $tcpport=10333;
 }

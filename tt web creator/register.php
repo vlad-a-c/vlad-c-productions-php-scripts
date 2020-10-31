@@ -1,6 +1,6 @@
 <?php
-include "tt5_api_lib.php";
-include "config.php";
+include_once "tt5_api_lib.php";
+include_once "config.php";
 $username=$_POST['username'];
 $password=$_POST['passwd'];
 if($db_store)

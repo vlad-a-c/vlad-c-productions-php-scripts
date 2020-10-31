@@ -80,7 +80,7 @@ function process_reply_cmd($cmdid)
             $users[$id]['nickname'] = get_str($cmdline, 'nickname');
             $users[$id]['ipaddr'] = get_str($cmdline, 'ipaddr');
             $users[$id]['chanid'] = get_int($cmdline, 'chanid');
-            $users[$id]['channelpath'] = getchannelpath($users[$id]['chanid']);
+            //$users[$id]['channelpath'] = getchannelpath($users[$id]['chanid']);
             $users[$id]['username'] = get_str($cmdline, 'username');
             break;
         case 'removeuser' :
